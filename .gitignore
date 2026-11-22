@@ -1,0 +1,10 @@
+# Imágenes de disco y builds (pesan demasiado para Git)
+*.img
+*.iso
+*.qcow2
+*.tmp
+build/
+linux-*/
+*.o
+*.ko
+*~

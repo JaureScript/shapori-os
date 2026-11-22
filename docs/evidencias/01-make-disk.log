@@ -1,0 +1,30 @@
+[1/5] Creando imagen shapori.img (16G, archivo sparse)
+[2/5] Creando tabla GPT y particiones
+Disk shapori.img: 33554432 sectors, 16.0 GiB
+Sector size (logical): 512 bytes
+Disk identifier (GUID): 4898D86D-485B-46E9-8EEB-1D91085DFA98
+Partition table holds up to 128 entries
+Main partition table begins at sector 2 and ends at sector 33
+First usable sector is 34, last usable sector is 33554398
+Partitions will be aligned on 2048-sector boundaries
+Total free space is 2014 sectors (1007.0 KiB)
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1            2048         1050623   512.0 MiB   EF00  BOOT
+   2         1050624        17827839   8.0 GiB     8300  SYSTEM
+   3        17827840        33554398   7.5 GiB     8300  DATA
+[3/5] Formateando BOOT (FAT32): se formatea un archivo temporal y se copia al offset de la partición
+[4/5] Formateando SYSTEM y DATA (ext4) directamente dentro de la imagen
+[5/5] Verificación
+
+Caution: Partition 3 doesn't end on a 2048-sector boundary. This may
+result in problems with some disk encryption tools.
+
+No problems found. 2014 free sectors (1007.0 KiB) available in 1
+segments, the largest of which is 2014 (1007.0 KiB) in size.
+Partición 1 (inicio sector 2048, 524288 KiB): LABEL=BOOT TYPE=vfat 
+Partición 2 (inicio sector 1050624, 8388608 KiB): LABEL=SYSTEM TYPE=ext4 
+Partición 3 (inicio sector 17827840, 7863279 KiB): LABEL=DATA TYPE=ext4 
+
+8.3M -rw-rw-rw- 1 codespace codespace 16G Nov 22 23:40 shapori.img
+Listo: shapori.img (tamaño aparente = SIZE; el primer número es lo que ocupa realmente en disco)
